@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="customizebtn">
+        <button>Edit</button>
+      </div>
+      <div class="Pausebtn">
+        <button>Play</button>
+      </div>
+      <div id="car">
+        <div class="top">
+          <div class="window w1">
+            <div class="window-extension we1"></div>
+          </div>
+          <div class="window w2">
+            <div class="window-extension we2"></div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="knob"></div>
+          <div class="knob front"></div>
+          <div class="head-light"></div>
+        </div>
+        <div class="bumper"></div>
+        <div class="tire t1">
+          <div class="hubcap"></div>
+        </div>
+        <div class="tire t2">
+          <div class="hubcap"></div>
+        </div>
+      </div>
+      <div class="land"></div>
+    </div>
+    <div class="edit">
+      <h1>Customize Your Car</h1>
+      <ul>
+        <li>
+          Top Color:
+          <input type="color" value="#ff3300" name="color1" class="color1" />
+          <br />
+        </li>
+        <li>
+          Main Color:
+          <input type="color" value="#ff3300" name="color2" class="color2" />
+        </li>
+        <li>
+          Bumper:
+          <input
+            type="color"
+            value="#ff3300"
+            name="bumpercolor"
+            class="bumpercolor"
+          />
+        </li>
+      </ul>
+
+      <div class="close">&times;</div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

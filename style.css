@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Times, "Times New Roman", serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  background-color: #a5eae7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 150px;
+}
+
+#car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transform: translateX(0px);
+  animation: move 2.5s infinite;
+  animation-play-state: paused;
+}
+
+.top {
+  left: 100px;
+  height: 200px;
+  width: 400px;
+  background-color: red;
+  border-radius: 200px 200px 0 0;
+  transform: translateY(50px);
+  display: flex;
+  justify-content: space-around;
+}
+
+.window {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgb(220, 220, 255),
+    rgb(255, 255, 255),
+    rgb(220, 220, 255)
+  );
+  width: 130px;
+  height: 130px;
+  transform: translateY(20px);
+}
+
+.w1 {
+  border-radius: 130px 0 0 0;
+}
+
+.w2 {
+  border-radius: 0 130px 0 0;
+}
+
+.window-extension {
+  height: 130px;
+  width: 30px;
+  background: inherit;
+  position: absolute;
+}
+
+.we1 {
+  transform: translateX(30px);
+  right: 0;
+}
+
+.we2 {
+  width: 15px;
+  left: 0;
+  transform: translateX(-15px);
+}
+
+.knob {
+  position: absolute;
+  top: 0;
+  left: 130px;
+  background-color: rgb(36, 95, 204);
+  width: 40px;
+  height: 15px;
+  border-radius: 15px;
+  transform: translateY(15px);
+  z-index: 0;
+}
+
+.front {
+  left: 320px;
+}
+
+.bottom {
+  position: relative;
+  height: 100px;
+  width: 600px;
+  background-color: red;
+  z-index: 0;
+  border-radius: 100px 100px 0 0;
+}
+
+.head-light {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: orange;
+  right: 20px;
+  bottom: 20px;
+}
+
+.bumper {
+  height: 30px;
+  width: 625px;
+  background-color: #22eeee;
+
+  border-radius: 30px;
+}
+
+.tire {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: black;
+  bottom: 0;
+  transform: translateY(75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t1 {
+  left: 70px;
+}
+
+.t2 {
+  right: 80px;
+}
+
+.hubcap {
+  width: 50px;
+  height: 50px;
+  background-color: greenyellow;
+  border-radius: 50%;
+}
+
+.land {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, rgb(52, 199, 15), rgb(65, 112, 10));
+  margin-top: 50px;
+}
+
+.edit {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  height: 100vh;
+  width: 40%;
+  transform: translateX(600px);
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: transform 0.5s ease-in;
+  padding: 20px;
+  backdrop-filter: blur(15px);
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: rgb(151, 150, 150);
+  border-radius: 50%;
+  padding: 10px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.customizebtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.Pausebtn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: white;
+  color: #1f1f1f;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.edit h1 {
+  text-align: center;
+}
+
+.edit ul {
+  list-style: none;
+}
+
+.edit li {
+  padding-top: 20px;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-600px);
+  }
+  to {
+    transform: translateX(1300px);
+  }
+}
